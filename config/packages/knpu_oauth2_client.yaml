@@ -1,0 +1,12 @@
+knpu_oauth2_client:
+    clients:
+        keycloak:
+            type : keycloak
+            auth-server-url: '%env(KEYCLOAK_APP_URL)'
+            realm: 'mediatekformation'
+            client_id : '%env(KEYCLOAK_CLIENTID)%'
+            client_secret :  '%env(KEYCLOAK_SECRET)%'
+            redirect_route: 'oauth_ckeck'
+        # configure your clients as described here: https://github.com/knpuniversity/oauth2-client-bundle#configuration
+
+
